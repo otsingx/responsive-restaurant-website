@@ -1,0 +1,323 @@
+/*-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36
+ / 44 / 52 / 62 / 74 / 86 / 98 
+
+ -Font weights:
+   default: 400
+   Medium:500
+   Semi-bold:600
+   Bold:700
+   
+   -Line heights:
+  default: 1;
+
+  
+-Letter-spacing:
+-0.75px 
+-1px
+
+02 COLORS
+
+ - (1)Primary: 
+ background: linear-gradient(to right, #2A2328, #E7DFDC);
+ #18141c
+ #c3b6b6;
+
+
+ -tints
+ #c3b6b6;
+ #CFC5C5;
+ #E7E2E2;
+ #E1DBDB;
+ 
+ 
+
+ -shades
+
+ -(2)Primary
+ #7e706f;
+ #18141c
+ background: linear-gradient(to right, #2c2c2c, #f8f4f0);
+ background: linear-gradient(to right, #252126, #E3DED9);
+-tints
+
+-shades
+linear-gradient(to right, #262024, #D0C9C6); 
+
+button rgba(195, 182, 182, 0.6);
+#c3b6b6
+
+---- WHITESPACE
+
+ -Spacin system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+--- BORDER RADIUS
+Default: 9px;
+medium: 11;
+
+
+
+/*----STYLES GÉNÉRAUX--------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background: linear-gradient(to right, #2a2328, #e7dfdc);
+}
+
+/*----------------------*/
+/*-----STYLE--------*/
+/*---------------------*/
+
+/*------HEADER--------*/
+
+.header.container {
+  padding: 4.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 200px;
+  height: 6.4rem;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#nav-principale ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#nav-principale a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #18141c;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+#nav-principale li:hover {
+  background-color: #254c64;
+}
+
+#nav-principale li:hover a {
+  color: #e7e2e2;
+}
+
+#nav-principale ul li:not(:last-child) a {
+  padding: 1rem;
+}
+
+#nav-principale ul li:not(:last-child) a:hover {
+  box-shadow: 2px 1px 5px rgba(42, 35, 40, 1);
+}
+
+#nav-principale ul li:last-child {
+  font-weight: bold;
+  font-size: 1.6rem;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+  padding: 1rem;
+  box-shadow: 2px 1px 5px rgba(42, 35, 40, 1);
+}
+
+/*--------BANNIÈRE-----------*/
+
+#banniere {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1.6rem;
+}
+
+.texte-banniere {
+  flex: 1;
+  max-width: 35%;
+  text-align: left;
+}
+
+.texte-banniere h2 {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  margin-bottom: 4rem;
+  text-align: left;
+  display: inline-block;
+  color: #c3b6b6;
+}
+
+.texte-banniere p {
+  color: #e1dbdb;
+  font-size: 1.6rem;
+  padding-bottom: 3.2rem;
+}
+
+.texte-banniere h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 48rem;
+  background: url("../img/separateur-ornemental.png") no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  bottom: -24rem;
+  left: 0;
+  background-size: contain;
+}
+
+.img-banniere {
+  flex: 2;
+  max-width: 65%;
+  text-align: right;
+}
+
+.img-banniere img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 1px 5px rgb(24, 20, 28);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 1px 5px rgba(42, 35, 40, 1);
+  color: #cfc5c5;
+}
+
+.btn-banniere {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-around;
+}
+
+.btn:hover {
+  background-color: #254c64;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #2a2328;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.1rem;
+  height: 100%;
+  background-color: #2a2328;
+}
+
+/*---------SECTION TÉMOIGNAGES-----------*/
+
+.temoignages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.temoignage-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #e1dbdb;
+  border: 1px solid #18141c;
+}
+
+.temoignage {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #bfb7b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  background-color: #bfb7b6;
+}
+
+.temoignage-client {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.temoignage-nom {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #18141c;
+  margin-left: 1rem;
+}
+
+.temoignage-texte {
+  flex-grow: 1;
+  color: #18141c;
+  padding-top: 1rem;
+}
+
+.temoignages-container h3,
+.temoignages-container h4 {
+  color: #c3b6b6;
+  margin-bottom: 2rem;
+}
+
+/*-----FOOTER------*/
+
+.footer-link {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-contenu {
+  height: 600px;
+}
+
+.icones-sociales i {
+  font-size: 24rem;
+}
