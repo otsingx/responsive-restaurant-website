@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Réserver une table | Saveurs de France</title>
-    <meta name="description" content="Réservez facilement une table chez Saveurs de France. Remplissez notre formulaire de réservation en ligne.">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Réserver une table | Saveurs de France</title>
+  <meta name="description"
+    content="Réservez facilement une table chez Saveurs de France. Remplissez notre formulaire de réservation en ligne.">
+</head>
 
-  <body>
-    <header class="header container">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique">
-        </a>
-      </h1>
-      <nav id="nav-principale">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li>
-            <a class="actuel" href="reservation.html">Réservation</a>
-          </li>
-          <li><a href="restaurant.html">Restaurant</a></li>
-          <li><a href="commande.html">Ma commande</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="header container">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique">
+      </a>
+    </h1>
+    <nav id="nav-principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>
+          <a class="actuel" href="reservation.html">Réservation</a>
+        </li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="commande.html">Ma commande</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-      <section id="form">
+  <main class="container">
+    <section id="form" class="form-wrapper">
+      <div class="titre-form">
         <h2>Réservation</h2>
+      </div>
 
-        <!--INFORMATIONS PERSONNELLES-->
+      <!--INFORMATIONS PERSONNELLES-->
 
-        <form action="confirmation.html" method="POST">
+      <div class="contenu-form">
+        <form action="confirmation.html" method="GET">
           <div class="champs-container">
             <fieldset>
               <legend>Coordonnées</legend>
@@ -48,21 +52,22 @@
                   Votre prénom
                   <span>*</span>
                 </label>
-                <input type="text" id="txt-prenom" name="txt-prenom" required />
+                <input type="text" id="txt-prenom" name="txt-prenom" required>
               </div>
               <div class="groupe-champs">
                 <label for="txt-nom">
                   Votre nom
                   <span>*</span>
                 </label>
-                <input type="text" id="txt-nom" name="txt-nom" required />
+                <input type="text" id="txt-nom" name="txt-nom" required>
               </div>
               <div class="groupe-champs">
                 <label for="phone">
                   Entrez votre numéro de téléphone
                   <span>*</span>
                 </label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
               </div>
             </fieldset>
 
@@ -75,38 +80,39 @@
                   Nombre de convives
                   <span>*</span>
                 </label>
-                <input type="number" id="nbr-quantite" name="nbr-quantite" min="1" max="20" placeholder="Veuillez sélectionner un élément de la liste" required>
+                <input type="number" id="nbr-quantite" name="nbr-quantite" min="1" max="20"
+                  placeholder="Veuillez sélectionner un élément de la liste" required>
               </div>
               <div class="groupe-champs">
-                <label for="date-naissance">
+                <label for="date-reservation">
                   Date de réservation
                   <span>*</span>
                 </label>
-                <input type="date" id="date-naissance" name="date-naissance" required>
+                <input type="date" id="date-reservation" name="date-reservation" required>
               </div>
               <div class="groupe-champs">
                 <p>
                   Où souhaitez-vous dîner?
                   <span>*</span>
                 </p>
-                <div class="radio-options">
-                  <div class="radio-option">
-                    <input type="radio" id="salle" name="reservation-place" value="salle" required />
+                <div class="options-radio">
+                  <div class="option-radio">
+                    <input type="radio" id="salle" name="reservation-place" value="salle" required>
                     <label for="salle">Salle à manger</label>
                   </div>
-                  <div class="radio-option">
-                    <input type="radio" id="terrasse" name="reservation-place" value="terrasse" required />
+                  <div class="option-radio">
+                    <input type="radio" id="terrasse" name="reservation-place" value="terrasse" required>
                     <label for="terrasse">Terrasse</label>
                   </div>
                 </div>
               </div>
 
               <div class="groupe-champs">
-                <label for="reservation-time">
+                <label for="heure-reservation">
                   Heure de réservation
                   <span>*</span>
                 </label>
-                <select id="reservation-time" name="reservation-time" required>
+                <select id="heure-reservation" name="heure-reservation" required>
                   <option value="" disabled selected>Veuillez sélectionner un élément de la liste</option>
                   <option value="12:00">12:00</option>
                   <option value="12:30">12:30</option>
@@ -144,7 +150,7 @@
 
             <fieldset>
               <legend>Inscrivez-vous à notre infolettre</legend>
-              <div class="checkbox-option">
+              <div class="option-checkbox">
                 <input type="checkbox" id="abonner" name="abonner">
                 <label for="abonner">Oui, je souhaite m'abonner</label>
               </div>
@@ -153,43 +159,40 @@
             <input type="submit" value="Confirmer la réservation">
           </div>
         </form>
-      </section>
-    </main>
-
-    <footer class="container">
-      <div class="footer-contenu">
-        <div class="footer-gauche">
-          <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
-            <img src="img/envelope.png" class="icon-email" alt="Email Icon">
-          </a>
-          <span>Réalisé par :Hannela</span>
-        </div>
-
-        <div class="footer-droite">
-          <span>Réseaux sociaux:</span>
-          <a href="#">
-            <img src="img/facebook.png" class="icon" alt="Facebook">
-          </a>
-          <a href="#">
-            <img src="img/linkedin.png" class="icon" alt="LinkedIn">
-          </a>
-          <a href="#">
-            <img src="img/twitter.png" class="icon" alt="Twitter">
-          </a>
-          <a href="#">
-            <img src="img/instagram.png" class="icon" alt="Instagram">
-          </a>
-        </div>
-        <hr />
-        <div class="footer-gauche">
-          <p>Intégration web 1</p>
-        </div>
-
-        <div class="footer-droite">
-          <p>Cégep de Trois-Rivières</p>
-          <p>Automne 2024</p>
-        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-contenu">
+      <div class="footer-gauche">
+        <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
+          <img src="img/envelope.png" class="icon-email" alt="Email Icon">
+        </a>
+        <span>Réalisé par :Hannela</span>
+      </div>
+
+      <div class="footer-droite">
+        <span>Réseaux sociaux:</span>
+        <a href="#">
+          <img src="img/facebook.png" class="icon" alt="Facebook"></a>
+        <a href="#">
+          <img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
+        <a href="#">
+          <img src="img/twitter.png" class="icon" alt="Twitter"></a>
+        <a href="#">
+          <img src="img/instagram.png" class="icon" alt="Instagram"></a>
+      </div>
+      <hr />
+      <div class="footer-gauche">
+        <p>Intégration web 1</p>
+      </div>
+
+      <div class="footer-droite">
+        <p>Cégep de Trois-Rivières</p>
+        <p>Automne 2024</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

@@ -114,12 +114,21 @@ body {
 }
 
 #nav-principale a {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1.8rem;
   color: #18141c;
   font-weight: bold;
   letter-spacing: 0.1em;
   display: inline-block;
+}
+
+#nav-principale a.actuel {
+  text-decoration: none;
+}
+
+
+body.accueil #nav-principale a {
+  text-decoration: none;
 }
 
 #nav-principale li:hover {
@@ -302,6 +311,198 @@ body {
   color: #c3b6b6;
   margin-bottom: 2rem;
 }
+
+
+/*----FORM------*/
+.form-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.titre-form {
+  flex-shrink: 0;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.titre-form h2 {
+  font-size: clamp(3.6rem, 4.2vw, 8.6rem);
+  margin: 0;
+  text-align: left;
+  color: #c3b6b6;
+}
+
+.contenu-form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  width: 100%;
+}
+
+.champs-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #bfb7b6;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+label span,
+p span {
+  color: red;
+  padding: 0.4rem;
+}
+
+.obligatoire-info {
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  top: 0.8rem;
+  color: #2a2328;
+  position: absolute;
+  right: 1rem;
+}
+
+fieldset {
+  position: relative;
+}
+
+.champs-container fieldset {
+  border: none;
+  margin: 0 2rem;
+}
+
+.champs-container legend {
+  font-weight: bold;
+}
+
+.champs-container fieldset:first-child legend {
+  padding: 48px 0;
+  font-size: clamp(1.8rem, 2.2vw, 4.4rem);
+}
+
+.option-checkbox {
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  margin-top: 1rem;
+}
+
+.option-radio {
+  margin-top: 1rem;
+}
+
+.groupe-champs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  gap: 0.5rem;
+}
+
+.groupe-champs label {
+  font-weight: 600;
+}
+
+.cache-visuellement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  left: -9999px;
+}
+
+.options-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.option-radio {
+  display: flex;
+  align-items: center;
+}
+
+.option-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.groupe-champs input::placeholder {
+  color: #2a2328;
+}
+
+.groupe-champs input[type="radio"],
+.option-checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #254c64;
+  transform: scale(1.4);
+}
+
+.groupe-champs input[type="text"],
+.groupe-champs input[type="tel"],
+.groupe-champs input[type="number"],
+.groupe-champs input[type="email"],
+.groupe-champs input[type="date"],
+.groupe-champs select,
+.groupe-champs textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  color: #2a2328;
+  box-sizing: border-box;
+}
+
+.groupe-champs input[type="text"]:hover,
+.groupe-champs input[type="tel"]:hover,
+.groupe-champs input[type="email"]:hover,
+.groupe-champs input[type="number"]:hover,
+.groupe-champs input[type="date"]:hover,
+.groupe-champs textarea:hover,
+.groupe-champs select:hover {
+  border: 3px solid #254c64;
+}
+
+.groupe-champs input[type="text"]:focus,
+.groupe-champs input[type="tel"]:focus,
+.groupe-champs input[type="email"]:focus,
+.groupe-champs input[type="number"]:focus,
+.groupe-champs input[type="date"]:focus,
+.groupe-champs textarea:focus,
+.groupe-champs select:focus {
+  border: 3px solid #254c64;
+  box-shadow: 0 0 6px #254c64;
+  outline: none;
+}
+
+.champs-container input[type="submit"] {
+  background-color: #2a2328;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  margin: 4rem 0;
+  letter-spacing: 0.1em;
+}
+
+
+.champs-container input[type="submit"]:hover {
+  background-color: #254c64;
+}
+
+
+
 
 /*-----FOOTER------*/
 
