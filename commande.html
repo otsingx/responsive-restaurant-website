@@ -1,59 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Votre Commande | Saveurs de France</title>
-    <meta name="description" content="Passez votre commande chez Saveurs de France et profitez d'une expérience gastronomique authentique." />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Votre Commande | Saveurs de France</title>
+  <meta name="description"
+    content="Passez votre commande chez Saveurs de France et profitez d'une expérience gastronomique authentique.">
+</head>
 
-  <body>
-    <header class="header container">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique" />
-        </a>
-      </h1>
-      <nav id="nav-principale">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="reservation.html">Réservation</a></li>
-          <li><a href="restaurant.html">Restaurant</a></li>
-          <li><a class="actuel" href="commande.html">Ma commande</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="header container">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique">
+      </a>
+    </h1>
+    <nav id="nav-principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a class="actuel" href="commande.html">Ma commande</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h2>Ma commande</h2>
 
-    <footer class="container">
-      <div class="footer-contenu">
-        <div class="footer-gauche">
-          <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
-            <img src="img/envelope.png" class="icon-email" alt="Email Icon" />
-          </a>
-          <span>Réalisé par :Hannela</span>
+  <div class="container">
+    <div class="flex-container">
+      <main class="contenu-principal">
+        <h2>Ma commande</h2>
+        <div class="contenu-table">
+
+          <!-- ENTRÉES -->
+          <section class="section-menu">
+            <h3>Entrées</h3>
+            <div class="table-container">
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Exemple 1</td>
+                      <td>5.99 $</td>
+                      <td>1</td>
+                    </tr>
+                    <tr class="ligne-pair">
+                      <td>Exemple 2</td>
+                      <td>15.99 $</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Exemple 3</td>
+                      <td>8.99 $</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- PLATS PRINCIPAUX -->
+          <section class="section-menu section-plats">
+            <h3>Plats principaux</h3>
+            <div class="table-container">
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Exemple 1</td>
+                      <td>5.00 $</td>
+                      <td>1</td>
+                    </tr>
+                    <tr class="ligne-pair">
+                      <td>Exemple 2</td>
+                      <td>28.99 $</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Exemple 3</td>
+                      <td>32.99 $</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- AUTRE -->
+          <section class="section-menu section-autre">
+            <h3>Autre</h3>
+            <div class="table-container">
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nom du plat</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Exemple 1</td>
+                      <td>4.99 $</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         </div>
+      </main>
 
-        <div class="footer-droite">
-          <span>Réseaux sociaux :</span>
-          <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
-          <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
-          <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
-          <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
-        </div>
-        <hr />
-        <div class="footer-gauche">
-          <p>Intégration web 1</p>
-        </div>
-
-        <div class="footer-droite">
-          <p>Cégep de Trois-Rivières</p>
-          <p>Automne 2024</p>
-        </div>
+      <!--DÉTAILS-->
+      <div class="boite-calcul">
+        <aside>
+          <h2>Détails</h2>
+          <p><strong>Sous-total:</strong> <span>29,96$</span></p>
+          <p><strong>Taxes:</strong> <span>4,49$</span></p>
+          <hr>
+          <p><strong>Total:</strong> <span>34.45$</span></p>
+          <a href="#" id="calcul-btn" class="btn">Commander</a>
+        </aside>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+
+  <footer class="container">
+    <div class="footer-contenu">
+      <div class="footer-gauche">
+        <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
+          <img src="img/envelope.png" class="icon-email" alt="Email Icon">
+        </a>
+        <span>Réalisé par :Hannela</span>
+      </div>
+
+      <div class="footer-droite">
+        <span>Réseaux sociaux :</span>
+        <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
+        <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
+        <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
+      </div>
+      <hr>
+      <div class="footer-gauche">
+        <p>Intégration web 1</p>
+      </div>
+
+      <div class="footer-droite">
+        <p>Cégep de Trois-Rivières</p>
+        <p>Automne 2024</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
