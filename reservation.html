@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -33,167 +33,177 @@
       </div>
     </header>
 
-  <main class="container">
-    <section id="form" class="form-wrapper">
-      <div class="titre-form">
-        <h2>Réservation</h2>
-      </div>
+    <!--  MAIN /  INFORMATIONS PERSONNELLES-->
 
-      <!--INFORMATIONS PERSONNELLES-->
-
-      <div class="contenu-form">
-        <form action="confirmation.html" method="GET">
-          <div class="champs-container">
-            <fieldset>
-              <legend>Coordonnées</legend>
-              <p class="obligatoire-info">
-                <span>*</span>
-                champs obligatoires
-              </p>
-
-              <div class="groupe-champs">
-                <label for="txt-prenom">
-                  Votre prénom
-                  <span>*</span>
-                </label>
-                <input type="text" id="txt-prenom" name="txt-prenom" required>
-              </div>
-              <div class="groupe-champs">
-                <label for="txt-nom">
-                  Votre nom
-                  <span>*</span>
-                </label>
-                <input type="text" id="txt-nom" name="txt-nom" required>
-              </div>
-              <div class="groupe-champs">
-                <label for="phone">
-                  Entrez votre numéro de téléphone
-                  <span>*</span>
-                </label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              </div>
-            </fieldset>
-
-            <!--DÉTAILS DE LA RÉSERVATION-->
-
-            <fieldset>
-              <legend class="cache-visuellement">Détails de la réservation</legend>
-              <div class="groupe-champs">
-                <label for="nbr-quantite">
-                  Nombre de convives
-                  <span>*</span>
-                </label>
-                <input type="number" id="nbr-quantite" name="nbr-quantite" min="1" max="20"
-                  placeholder="Veuillez sélectionner un élément de la liste" required>
-              </div>
-              <div class="groupe-champs">
-                <label for="date-reservation">
-                  Date de réservation
-                  <span>*</span>
-                </label>
-                <input type="date" id="date-reservation" name="date-reservation" required>
-              </div>
-              <div class="groupe-champs">
-                <p>
-                  Où souhaitez-vous dîner?
-                  <span>*</span>
+    <main>
+      <section id="form">
+        <div class="titre-form">
+          <h2>Réservation</h2>
+        </div>
+        <div class="contenu-form">
+          <form action="confirmation.html" method="GET">
+            <div class="champs-container">
+              <fieldset>
+                <legend>Coordonnées</legend>
+                <p class="obligatoire-info">
+                  <span>*</span> champs obligatoires
                 </p>
-                <div class="options-radio">
-                  <div class="option-radio">
-                    <input type="radio" id="salle" name="reservation-place" value="salle" required>
-                    <label for="salle">Salle à manger</label>
-                  </div>
-                  <div class="option-radio">
-                    <input type="radio" id="terrasse" name="reservation-place" value="terrasse" required>
-                    <label for="terrasse">Terrasse</label>
+
+                <div class="groupe-champs">
+                  <label for="txt-prenom">
+                    Votre prénom
+                    <span>*</span>
+                  </label>
+                  <input type="text" id="txt-prenom" name="txt-prenom" required>
+                </div>
+
+                <div class="groupe-champs">
+                  <label for="txt-nom">
+                    Votre nom
+                    <span>*</span>
+                  </label>
+                  <input type="text" id="txt-nom" name="txt-nom" required>
+                </div>
+
+                <div class="groupe-champs">
+                  <label for="phone">
+                    Entrez votre numéro de téléphone
+                    <span>*</span>
+                  </label>
+                  <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+              </fieldset>
+
+              <!--DÉTAILS DE LA RÉSERVATION-->
+
+              <fieldset>
+                <legend class="cache-visuellement">Nombre de convives</legend>
+                <div class="groupe-champs">
+                  <label for="nbr-quantite">
+                    Nombre de convives
+                    <span>*</span>
+                  </label>
+                  <input type="number" id="nbr-quantite" name="nbr-quantite" min="1" max="20"
+                    placeholder="Veuillez sélectionner un élément de la liste" required>
+                </div>
+
+                <div class="groupe-champs">
+                  <label for="date-reservation">
+                    Date de réservation
+                    <span>*</span>
+                  </label>
+                  <input type="date" id="date-reservation" name="date-reservation" required>
+                </div>
+
+                <div class="groupe-champs">
+                  <p>
+                    Où souhaitez-vous dîner?
+                    <span>*</span>
+                  </p>
+                  <div class="options-radio">
+                    <div class="option-radio">
+                      <input type="radio" id="salle" name="reservation-place" value="salle" required>
+                      <label for="salle">Salle à manger</label>
+                    </div>
+                    <div class="option-radio">
+                      <input type="radio" id="terrasse" name="reservation-place" value="terrasse" required>
+                      <label for="terrasse">Terrasse</label>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="groupe-champs">
-                <label for="heure-reservation">
-                  Heure de réservation
-                  <span>*</span>
-                </label>
-                <select id="heure-reservation" name="heure-reservation" required>
-                  <option value="" disabled selected>Veuillez sélectionner un élément de la liste</option>
-                  <option value="12:00">12:00</option>
-                  <option value="12:30">12:30</option>
-                  <option value="13:00">13:00</option>
-                  <option value="13:30">13:30</option>
-                  <option value="17:00">17:00</option>
-                  <option value="17:30">17:30</option>
-                  <option value="18:00">18:00</option>
-                  <option value="18:30">18:30</option>
-                  <option value="19:00">19:00</option>
-                  <option value="19:30">19:30</option>
-                  <option value="20:00">20:00</option>
-                  <option value="20:30">20:30</option>
-                  <option value="21:00">21:00</option>
-                </select>
-              </div>
+                <div class="groupe-champs">
+                  <label for="heure-reservation">
+                    Heure de réservation
+                    <span>*</span>
+                  </label>
+                  <select id="heure-reservation" name="heure-reservation" required>
+                    <option value="" disabled selected>Veuillez sélectionner un élément de la liste</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                  </select>
+                </div>
 
-              <div class="groupe-champs">
-                <label for="txt-area">Partagez votre expérience avec nous</label>
-                <textarea name="txt-area" id="txt-area"></textarea>
-              </div>
-            </fieldset>
+                <div class="groupe-champs">
+                  <label for="txt-area">Partagez votre expérience avec nous</label>
+                  <textarea name="txt-area" id="txt-area"></textarea>
+                </div>
+              </fieldset>
 
-            <!--CONTACT-->
 
-            <fieldset>
-              <legend class="cache-visuellement">Contact</legend>
-              <div class="groupe-champs">
-                <label for="mail-utilisateur">Votre courriel</label>
-                <input type="email" id="mail-utilisateur" name="mail-utilisateur">
-              </div>
-            </fieldset>
+              <!--CONTACT-->
 
-            <!--INFOLETTRE-->
+              <fieldset>
+                <legend class="cache-visuellement">Contact</legend>
+                <div class="groupe-champs">
+                  <label for="mail-utilisateur">Votre courriel</label>
+                  <input type="email" id="mail-utilisateur" name="mail-utilisateur">
+                </div>
+              </fieldset>
 
-            <fieldset>
-              <legend>Inscrivez-vous à notre infolettre</legend>
-              <div class="option-checkbox">
-                <input type="checkbox" id="abonner" name="abonner">
-                <label for="abonner">Oui, je souhaite m'abonner</label>
-              </div>
-            </fieldset>
+              <!--INFOLETTRE-->
 
-            <input type="submit" value="Confirmer la réservation">
-          </div>
-        </form>
+              <fieldset>
+                <legend>Inscrivez-vous à notre infolettre</legend>
+                <div class="option-checkbox">
+                  <input type="checkbox" id="abonner" name="abonner">
+                  <label for="abonner">Oui, je souhaite m'abonner</label>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn">Confirmer la réservation</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-haut">
+        <div class="footer-gauche">
+          <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
+            <img src="img/envelope.png" class="icon-email" alt="Icône email">
+          </a>
+          <span>Réalisé par : Hannela Raudik</span>
+        </div>
+
+        <div class="footer-droit">
+          <span>Réseaux sociaux :</span>
+          <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
+          <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
+          <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
+          <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
+        </div>
       </div>
-    </section>
-  </main>
 
-<!-- FOOTER -->
+      <hr>
 
-  <footer class="footer">
-    <div class="footer-haut">
-      <div class="footer-gauche">
-        <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
-          <img src="img/envelope.png" class="icon-email" alt="Icône email">
-        </a>
-        <span>Réalisé par : Hannela Raudik</span>
+      <div class="footer-bas">
+        <p class="footer-gauche">Intégration web 1</p>
+        <div class="footer-droit">
+          <p>Cégep de Trois-Rivières</p>
+          <p>Automne 2024</p>
+        </div>
       </div>
-
-      <div class="footer-droit">
-        <span>Réseaux sociaux :</span>
-        <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
-        <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
-        <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
-        <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
+      <div class="pagination">
+        <a href="index.html" class="fleche">&lt;</a>
+        <span class="pagination-info">2 / 4</span>
+        <a href="restaurant.html" class="fleche">&gt;</a>
       </div>
-    </div>
-    <hr>
-    <div class="footer-bas">
-      <p class="footer-gauche">Intégration web 1</p>
-      <div class="footer-droit">
-        <p>Cégep de Trois-Rivières</p>
-        <p>Automne 2024</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

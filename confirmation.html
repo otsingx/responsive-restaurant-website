@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Réservation Confirmée | Saveurs de France</title>
-    <meta name="description" content="Votre réservation a été confirmée avec succès. Merci d'avoir réservé chez nous.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Réservation Confirmée | Saveurs de France</title>
+  <meta name="description" content="Votre réservation a été confirmée avec succès. Merci d'avoir réservé chez nous.">
 </head>
 
 <body>
-
-
+  <div class="container">
     <header class="header">
-        <h1 class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique">
-            </a>
-        </h1>
-        <nav id="nav-principale">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="reservation.html">Réservation</a></li>
-                <li><a href="restaurant.html">Restaurant</a></li>
-                <li><a href="commande.html">Ma commande</a></li>
-            </ul>
-
-        </nav>
-
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo de l'entreprise - Restaurant Gastronomique">
+        </a>
+      </h1>
+      <nav id="nav-principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a class="actuel" href="reservation.html">Réservation</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="commande.html">Ma commande</a></li>
+        </ul>
+      </nav>
+      <div class="icon-mobile">
+        <img src="img/menu-bar.png" alt="Icône du menu mobile">
+      </div>
     </header>
 
     <main>
-        <h2>Confirmation de votre réservation</h2>
+      <section id="confirmation">
+        <div class="confirmation-container">
+          <h2>Confirmation de votre réservation</h2>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
 
     <footer class="footer">
-        <div class="footer-haut">
-            <div class="footer-gauche">
-                <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
-                    <img src="img/envelope.png" class="icon-email" alt="Icône email">
-                </a>
-                <span>Réalisé par : Hannela Raudik</span>
-            </div>
+      <div class="footer-haut">
+        <div class="footer-gauche">
+          <a href="mailto:saveursdefrance@gmail.com" id="email-link" title="Envoyer un email">
+            <img src="img/envelope.png" class="icon-email" alt="Icône email">
+          </a>
+          <span>Réalisé par : Hannela Raudik</span>
+        </div>
 
-            <div class="footer-droit">
-                <span>Réseaux sociaux :</span>
-                <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
-                <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
-                <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
-                <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
-            </div>
+        <div class="footer-droit">
+          <span>Réseaux sociaux :</span>
+          <a href="#"><img src="img/facebook.png" class="icon" alt="Facebook"></a>
+          <a href="#"><img src="img/linkedin.png" class="icon" alt="LinkedIn"></a>
+          <a href="#"><img src="img/twitter.png" class="icon" alt="Twitter"></a>
+          <a href="#"><img src="img/instagram.png" class="icon" alt="Instagram"></a>
         </div>
-        <hr>
-        <div class="footer-bas">
-            <p class="footer-gauche">Intégration web 1</p>
-            <div class="footer-droit">
-                <p>Cégep de Trois-Rivières</p>
-                <p>Automne 2024</p>
-            </div>
+      </div>
+      <hr>
+      <div class="footer-bas">
+        <p class="footer-gauche">Intégration web 1</p>
+        <div class="footer-droit">
+          <p>Cégep de Trois-Rivières</p>
+          <p>Automne 2024</p>
         </div>
+      </div>
     </footer>
+  </div>
 </body>
 </html>
