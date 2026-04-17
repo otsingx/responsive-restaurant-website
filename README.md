@@ -40,15 +40,22 @@ This project focuses on front-end structure and design.
 Some interactive features (like the mobile menu or form submission) are not functional, as they require JavaScript.
 
 ## Preview
+
 Homepage
+![Homepage](./screenshots/homepage.png)
 
 Restaurant
+![Restaurant](./screenshots/restaurant.png)
 
 Reservation
+![Reservation](./screenshots/reservation.png)
 
 Commande
+![Commande](./screenshots/commande.png)
 
 Mobile View
+![Mobile](./screenshots/mobile.png)
+
 
 ## Author
 
