@@ -1,5 +1,4 @@
-# Restaurant Website
-
+# Saveurs de France – Restaurant Website
 Responsive multi-page restaurant website built with HTML5 and CSS3.
 
 ## Live Demo
@@ -17,7 +16,6 @@ The focus was on building a clean layout, structuring content properly, and ensu
 - CSS3
 - Flexbox
 - CSS Grid
-- Google Fonts
 
 ## Features
 
@@ -40,6 +38,17 @@ The focus was on building a clean layout, structuring content properly, and ensu
 
 This project focuses on front-end structure and design.  
 Some interactive features (like the mobile menu or form submission) are not functional, as they require JavaScript.
+
+## Preview
+Homepage
+
+Restaurant
+
+Reservation
+
+Commande
+
+Mobile View
 
 ## Author
 
